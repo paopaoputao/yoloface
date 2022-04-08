@@ -66,8 +66,8 @@ net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
 
 
 def _main():
-    wind_name = 'face detection using YOLOv3'
-    cv2.namedWindow(wind_name, cv2.WINDOW_NORMAL)
+    # wind_name = 'face detection using YOLOv3'
+    # cv2.namedWindow(wind_name, cv2.WINDOW_NORMAL)
 
     output_file = ''
 
@@ -137,7 +137,7 @@ def _main():
         else:
             video_writer.write(frame.astype(np.uint8))
 
-        cv2.imshow(wind_name, frame)
+        # cv2.imshow(wind_name, frame)
 
         key = cv2.waitKey(1)
         if key == 27 or key == ord('q'):
